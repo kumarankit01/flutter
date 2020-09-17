@@ -11,19 +11,19 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
           backgroundColor: Colors.teal,
           body: SafeArea(
-              child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              child: Column(
             children: [
-              Container(
-                  width: 100.0, height: double.infinity, color: Colors.red),
-              Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-                Container(width: 100.0, color: Colors.yellow, height: 100.0),
-                Container(width: 100.0, color: Colors.green, height: 100.0)
-              ]),
-              Container(
-                width: 100.0,
-                color: Colors.blue,
-                height: double.maxFinite,
+              CircleAvatar(
+                radius: 80.0,
+                backgroundColor: Colors.red,
+                backgroundImage: AssetImage('images/ankit.jpg'),
+              ),
+              Text(
+                "Kumar Ankit",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 40.0),
               )
             ],
           ))),
